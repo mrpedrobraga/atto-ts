@@ -10,7 +10,7 @@ let countTextUpper = countText.map(String.prototype.toUppercase());
 count.set(10);
 console.dir(countTextUpper); // Should be 'COUNTER: 10'
 ```
-> [!INFO]
+> [!INFO] 
 > Check out index.ts!
 
 It is similar to the [Current proposal for ECMAScript signals](https://github.com/proposal-signals/proposal-signals), but it doubles down on functional concepts. Basically, "States" are [functors](https://javascript.plainenglish.io/the-definite-guide-to-functors-in-js-6f5e82bd1dac). A functor in FP, is a "conceptual wrapper" -- you can put something in it to get extra functionality. Functors have an avaiable implementation of a "map" function (although not always called that) which creates a derived functor.
