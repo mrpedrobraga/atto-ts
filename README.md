@@ -1,4 +1,4 @@
-# Atto TS
+# Femto TS
 
 A simple library for creating reactive systems using functional-ish programming.
 
@@ -40,5 +40,5 @@ This library isn't the most efficient implementation of this concept. You could 
 ### Install
 
 ```bash
-npm install atto-ts
+npm install femto-ts
 ```
