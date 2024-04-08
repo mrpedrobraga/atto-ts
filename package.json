@@ -1,5 +1,5 @@
 {
-  "name": "atto-ts",
+  "name": "femto-ts",
   "version": "0.0.1",
   "description": "A simple typescript functional-reactive library for creating GUI projects.",
   "main": "./index.js",
