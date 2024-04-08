@@ -1,0 +1,23 @@
+{
+  "name": "atto-ts",
+  "version": "1.0.0",
+  "description": "A simple typescript functional-reactive library for creating GUI projects.",
+  "main": "./index.js",
+  "scripts": {
+    "start": "node -r @swc-node/register index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ui",
+    "react",
+    "frp",
+    "signals"
+  ],
+  "author": "mrpedrobraga",
+  "license": "MIT",
+  "devDependencies": {
+    "@swc-node/register": "^1.9.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.4"
+  }
+}
