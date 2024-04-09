@@ -1,12 +1,8 @@
-import { Sx } from "src/signal";
+import { Sx } from "src/prelude";
 
 function App() {
-    let count = Sx.state(0);
-    let countText = count.map(x => `Counter: ${x}`);
-    let countTextUpper = countText.map(String.prototype.toUpperCase);
-
-    count.set(10);
-    console.dir(countTextUpper.value()); // Should be 'COUNTER: 10'
+    let todos = Sx.stateList([ 1, 2, 3 ]);
+    let todosString = todos.map(x => x.concat(4, 5, 6));
 }
 
 App();

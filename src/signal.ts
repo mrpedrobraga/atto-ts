@@ -39,23 +39,6 @@ export abstract class State<T> implements Functor<T> {
     }
 };
 
-export namespace Sx {
-    /** Creates a new `MutableState<T>`, which can be used to create derived states. */
-    export function state<T>(initialValue: T): MutableState<T> {
-        return new MutableState(initialValue)
-    }
-
-    export type MaybeState<T> = State<T> | T;
-    export function flatWrap<T>(initialValue: MaybeState<T>): State<T> {
-        return initialValue instanceof State ? initialValue : new FrozenState(initialValue)
-    }
-
-    /** Creates a new `MutableState<T>`, which can be used to create derived states. */
-    export function zip<Ts extends any[], U>(states: States<Ts>, predicate: CompositePredicate<Ts, U>): StateZip<Ts, U> {
-        return new StateZip(states, predicate)
-    }
-}
-
 export class FrozenState<T> extends State<T> {
     override value(): T {
         return this._value;
