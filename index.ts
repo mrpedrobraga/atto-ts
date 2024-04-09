@@ -1,16 +1,12 @@
-import { state } from "src/signal";
+import { Sx } from "src/signal";
 
 function App() {
-    const s = state(0)
+    let count = Sx.state(0);
+    let countText = count.map(x => `Counter: ${x}`);
+    let countTextUpper = countText.map(String.prototype.toUpperCase);
 
-    const other = s
-        .map(x => `  Counter: ${x}  `)
-        .map(String.prototype.toUpperCase)
-        .map(String.prototype.trim)
-
-    s.set(10);
-
-    console.dir(other.value());
+    count.set(10);
+    console.dir(countTextUpper.value()); // Should be 'COUNTER: 10'
 }
 
 App();
