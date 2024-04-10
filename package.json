@@ -1,6 +1,6 @@
 {
   "name": "femto-ts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple typescript functional-reactive library for creating GUI projects.",
   "main": "./index.js",
   "scripts": {
